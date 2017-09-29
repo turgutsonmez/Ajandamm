@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/login_background"
+  android:orientation="vertical"
+  tools:context="turgutsonmez.com.ajandam.RegisterActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="31dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+      android:layout_width="200dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center"
+      android:src="@drawable/uc"
+      android:tint="@android:color/white" />
+
+    <EditText
+      android:id="@+id/register_txtEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="98dp"
+      android:inputType="textEmailAddress"
+      android:background="#AB47BC"
+      android:hint="Email"
+      android:padding="12dp"
+      android:textColor="@android:color/white"
+      android:textColorHint="@android:color/white" />
+
+    <EditText
+      android:id="@+id/register_txtSifre"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="#AB47BC"
+      android:hint="Şifre"
+      android:inputType="numberPassword"
+      android:padding="12dp"
+      android:textColor="@android:color/white"
+      android:textColorHint="@android:color/white" />
+
+    <EditText
+      android:id="@+id/register_txtSifreTekrar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="#AB47BC"
+      android:hint="Şifreyi onaylayın"
+      android:inputType="numberPassword"
+      android:padding="12dp"
+      android:textColor="@android:color/white"
+      android:textColorHint="@android:color/white" />
+
+    <Button
+      android:id="@+id/register_btnKayıtOl"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="@android:color/white"
+      android:text="kayıt ol"
+      android:textColor="#F50057" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="16dp"
+    android:gravity="center">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Bir hesabın var mı ?" />
+
+    <TextView
+      android:id="@+id/register_txtGirisYap"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" Giriş Yap"
+      android:textColor="@android:color/white"
+      android:textStyle="bold" />
+
+  </LinearLayout>
+
+</RelativeLayout>

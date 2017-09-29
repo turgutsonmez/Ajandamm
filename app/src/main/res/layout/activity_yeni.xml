@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="10dp"
+  tools:context="turgutsonmez.com.ajandam.YeniActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+      android:id="@+id/txtBaslik"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:hint="Başlık"
+      android:inputType="textPersonName" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+      android:id="@+id/txtNot"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:hint="Not"
+      android:inputType="textPersonName" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageButton
+      android:id="@+id/btnTakvimGun"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@android:drawable/ic_menu_my_calendar"
+      android:layout_weight="0.7"
+      android:text="Gün" />
+    <TextView
+      android:hint="Gun seç"
+      android:id="@+id/txtGun"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageButton
+      android:id="@+id/btnTakvimSaat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.7"
+      android:src="@android:drawable/ic_menu_my_calendar"
+      android:text="Gün" />
+
+    <TextView
+      android:id="@+id/txtSaat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:hint="Saat seç"
+      android:inputType="phone" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <EditText
+      android:id="@+id/txs"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.3"
+      android:hint="kategori"
+      android:inputType="phone" />
+
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/btnEkle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Kaydet"
+    android:textStyle="bold" />
+
+</LinearLayout>
